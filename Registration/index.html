@@ -7,21 +7,20 @@
 <body>
 
 <div class="form-wrapper">
-    
-        <h2>NSS Camp Registration</h2>
-        <from>
+    <h2>NSS Camp Registration</h2>
+    <form id="nssForm">
 
         <label for="fullName">Full Name</label>
-        <input type="text"  required placeholder="Enter your full name">
+        <input type="text" id="fullName" required placeholder="Enter your full name">
 
         <label for="regNo">Registration Number</label>
-        <input type="text" required placeholder="e.g. 22BCS1234">
+        <input type="text" id="regNo" required placeholder="e.g. 22BCS1234">
 
         <label for="email">Email Address</label>
-        <input type="email" required placeholder="you@example.com">
+        <input type="email" id="email" required placeholder="you@example.com">
 
         <label for="phone">Phone Number</label>
-        <input type="number" required placeholder="10-digit number">
+        <input type="number" id="phone" required placeholder="10-digit number">
 
         <label for="gender">Gender</label>
         <select id="gender" name="gender" required>
@@ -32,7 +31,7 @@
         </select>
 
         <label for="dept">Department</label>
-        <input type="text" required placeholder="Your department">
+        <input type="text" id="dept" required placeholder="Your department">
 
         <label for="year">Year of Study</label>
         <select id="year" name="year" required>
@@ -44,11 +43,13 @@
         </select>
 
         <label for="medical">Any Medical Conditions</label>
-        <textarea id="medical"  rows="2" placeholder="Mention if any"></textarea>
+        <textarea id="medical" rows="2" placeholder="Mention if any"></textarea>
 
         <button type="submit">Register Now</button>
+        <p id="formMessage"></p>
     </form>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
